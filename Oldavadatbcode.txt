@@ -1,0 +1,557 @@
+﻿<!--WOW.js Animations Library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script>
+    /*Initiate WOW*/
+    new WOW().init();
+</script>
+<!--Animate.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+
+<style>
+
+
+    /*Resets default 1100px max-width setting*/ 
+    div#main > .fusion-row {
+         max-width: 100%;
+         padding: 0;
+    }
+
+
+    /*Padding for avada rows*/
+    .post-content .fusion-fullwidth {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+
+
+    /*Set main container padding to 0*/
+    div #main{
+        padding:0;
+    }
+
+
+    /*Services Heading*/
+    div#services h1, #case-studies h1, #tb-services h1, #tb-homeSlider h1, #tb-projects h1 {
+        font-family: "Open Sans";
+        text-transform:uppercase;
+        font-weight:bold;
+    }
+
+
+    /*Services Titles*/
+    div#services .content a{
+        font-size:18px;
+        font-family:"Open Sans";
+        text-transform:uppercase;
+        outline:0;
+    }
+
+
+    /*Services body text*/
+    div#services .text {
+        font-size: 14px;
+        font-family: 'Droid Serif';
+    }
+
+
+    /*Services Icons*/
+    #services .fa{
+        padding-right: 10px;
+        font-size: 24px;
+        color: #d91a09;
+    }
+
+
+    /*Case Studies Section Max-Width Adjustment*/
+    div#case-studies .fusion-builder-row {
+        max-width: 1100px!important;
+    }
+
+
+    /*Case Study Text*/
+    p.study-text {
+        font-size: 14px;
+        margin-top: 20px;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        color: black;
+        font-weight:bold;
+    }
+
+
+    /*Adjust Padding for Slider (from Old Site) for Cleaner Presentation*/
+    div#tb-slide {
+        padding: 0!important;
+    }
+
+
+    /*Services Tab Links*/
+    div#service-tabs li a {
+        color: #d91a09;
+    }
+
+
+     /*Services Tabs Inner List Items*/
+    div#service-tabs li {
+        font-size: 15px;
+        list-style-type: square;
+        font-family: "Droid Serif";
+    }
+
+
+     /*Services Tabs*/
+    #service-tabs h4.fusion-tab-heading {
+        font-size: 14px;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+
+
+    /*Progress Bar Text*/
+    body .fusion-progressbar-text {
+        font-family: "Open Sans";
+        font-weight:bold;
+    }
+
+
+    /*Carousel Cavs Image Positioning Fix*/
+    #wrapper .wp-posts-carousel-image img[src*='cavs']{
+        margin-top:12.5%;
+    }
+
+
+    /*Carousel Headings*/
+    #wrapper .simple-theme.wp-posts-carousel .wp-posts-carousel-title{
+        font-size: 14px;
+        font-family:"Open Sans";
+        color:#d91a09 ;
+        text-transform:uppercase;
+        font-weight:bold;
+    }
+
+
+    /*Carousel Body Text*/
+    #wrapper .wp-posts-carousel-desc {
+        font-size: 14px;
+        font-family: Droid Serif;
+        color: black;
+    }
+
+
+    @media (min-width: 768px){
+        /*Adjust Service Tab Width*/
+        body .fusion-tabs.vertical-tabs .nav-tabs {
+            width: 30%;
+        }
+
+
+        /*Adjust Service Content Width*/
+        body .fusion-tabs.vertical-tabs .tab-content {
+            width: 70%;
+        }    
+    }
+</style>                                                   
+
+
+
+
+[fusion_builder_container hundred_percent="no" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="services" background_color="" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="" padding_right="" padding_bottom="" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="yes" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="" border_color="" border_style="solid" border_position="all" padding="50px 0px 50px 0px" margin_top="0px" margin_bottom="0px" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no"][fusion_title margin_top="20px" margin_bottom="20px" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" size="1" content_align="center" style_type="none" sep_color=""]
+<h1 class="wow zoomInLeft">Our <span style="color: #d91a09;">Services</span></h1>
+[/fusion_title][fusion_separator style_type="single solid" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" sep_color="#d91a09" top_margin="0" bottom_margin="60px" border_size="3" icon="" icon_circle="" icon_circle_color="" width="40px" alignment="center" /][fusion_builder_row_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow bounceInLeft">
+
+
+<i class="fa fa-facebook"></i><a title="Learn more about Social Media" href="http://tbsmo.com/services/social-media-optimization/" name="social">Social Media</a>
+<p class="text">Having updated profiles and publishing unique content across all social platforms are just a few ways of being part of the social conversation during this online revolution.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow flip">
+
+
+<i class="fa fa-at"></i><a title="Learn more about Website Development" href="http://tbsmo.com/services/website-development/" name="website">Website Development</a>
+<p class="text">Our goal is to take your business' visions and turn them into a unique and powerful web presence.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow rotateIn">
+
+
+<i class="fa fa-google"></i><a title="Learn more about Search Engine Optimization" href="http://tbsmo.com/services/digital-advertising-services/" name="SEO">Search Engine Optimization</a>
+<p class="text">Showing up at the top of search engine results pages is vital to online success. Our tactics will help your company rank for your most important keywords.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][/fusion_builder_row_inner][fusion_builder_row_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow zoomInUp">
+
+
+<i class="fa fa-suitcase"></i><a title="Learn more about Reputation Management " href="http://tbsmo.com/services/reputation-management/" name="reputation">Reputation Management </a>
+<p class="text">Knowing every time someone mentions your brand on the internet is vital to ensure your company’s image is correctly portrayed online.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow lightSpeedIn">
+
+
+<i class="fa fa-tags"></i><a title="Learn more about Branding" href="http://tbsmo.com/services/production-graphic-design/" name="branding">Branding</a>
+<p class="text">A strong sense of who you are and who the public perceives you to be gives your company a major edge in this increasingly competitive market.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all" element_content=""][fusion_text]
+<div class="content wow rollIn">
+
+
+<i class="fa fa-newspaper-o"></i><a title="Learn more about Digital Advertising" href="http://tbsmo.com/services/digital-advertising-services/" name="digital">Digital Advertising </a>
+<p class="text">These are goal oriented services where we maximize your advertising budget, including both sales and branding advertising services.</p>
+
+
+</div>
+[/fusion_text][/fusion_builder_column_inner][/fusion_builder_row_inner][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container][fusion_builder_container hundred_percent="yes" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="case-studies" background_color="#f5f5f5" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="" padding_right="" padding_bottom="" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="yes" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="#f5f5f5" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="" border_color="" border_style="solid" border_position="all" padding="50px 0px 50px 0px" margin_top="0px" margin_bottom="0px" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no"][fusion_title margin_top="20px" margin_bottom="20px" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" size="1" content_align="center" style_type="none" sep_color=""]
+<h1 class="wow zoomInRight"><span style="color: #d91a09;">Case</span> Studies</h1>
+[/fusion_title][fusion_separator style_type="single solid" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" sep_color="#d91a09" top_margin="0" bottom_margin="60px" border_size="3" icon="" icon_circle="" icon_circle_color="" width="40px" alignment="center" /][fusion_builder_row_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="wow pulse" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" margin_top="" margin_bottom="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="41" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://tbsmo.com/noji-digital-advertising-case-study/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/NJOI_casestudy.png[/fusion_imageframe][fusion_text]
+<p class="study-text" style="text-align: center;">Full Digital Case Studies</p>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="wow flash" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" margin_top="" margin_bottom="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="40" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://tbsmo.com/wet-brush-social-media-case-study/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/WB_casestudy.png[/fusion_imageframe][fusion_text]
+<p class="study-text" style="text-align: center;">Social Media Case Study</p>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="wow rubberBand" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" margin_top="" margin_bottom="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="39" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://tbsmo.com/barnabas-health-rich-media-facebook-status-case-study/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/barnabas-healthcare.png[/fusion_imageframe][fusion_text]
+<p class="study-text" style="text-align: center;">Social Rich Media Case Study</p>
+[/fusion_text][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="wow swing" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" margin_top="" margin_bottom="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="38" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://tbsmo.com/social-media-monitoring-casestudy/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/TB_Cavs-1-960x660-300x200-e1478608356833.jpg[/fusion_imageframe][fusion_text]
+<p class="study-text" style="text-align: center;">Social Monitoring Case Study</p>
+[/fusion_text][/fusion_builder_column_inner][/fusion_builder_row_inner][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container][fusion_builder_container hundred_percent="no" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="tb-homeSlider" background_color="" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="0" padding_right="" padding_bottom="20px" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" border_position="all" padding="0 0px 0 0px" margin_top="" margin_bottom="" animation_type="slide" animation_direction="left" animation_speed="0.3" animation_offset="" last="no"][rev_slider alias="slider19" /][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container][fusion_builder_container hundred_percent="no" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="tb-services" background_color="" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="0" padding_right="" padding_bottom="20px" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" border_position="all" padding="50px 0px 50px 0px" margin_top="" margin_bottom="" animation_type="slide" animation_direction="left" animation_speed="0.3" animation_offset="" last="no"][fusion_title margin_top="20px" margin_bottom="20px" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" size="1" content_align="center" style_type="none" sep_color=""]
+<h1 class="wow zoomInLeft">Why <span style="color: #d91a09;">TB</span>?</h1>
+[/fusion_title][fusion_separator style_type="single solid" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" sep_color="#d91a09" top_margin="0" bottom_margin="60px" border_size="3" icon="" icon_circle="" icon_circle_color="" width="40px" alignment="center" /][fusion_builder_row_inner][fusion_builder_column_inner type="2_3" layout="2_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_tabs design="classic" layout="vertical" justified="yes" backgroundcolor="" inactivecolor="" bordercolor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="service-tabs"][fusion_tab title="Social" icon="fa-thumbs-o-up"]
+<ul>
+         <li><a href="http://tbsmo.com/content-calendar-creation/">Content Strategy</a></li>
+         <li><a href="http://tbsmo.com/services/social-media-optimization-2/monitoring-response-in-new-jersey/">24/7 Monitoring</a></li>
+         <li>Community Management</li>
+         <li><a href="http://tbsmo.com/services/social-media-optimization-2/social-advertising-campaigns-in-new-jersey/">Social Advertisement</a></li>
+         <li><a href="http://tbsmo.com/services/social-media-optimization-2/social-media-monthly-analytics-reporting-in-nj/">Monthly Analytics</a></li>
+         <li>Rich Media</li>
+         <li><a href="http://tbsmo.com/services/social-media-optimization-2/facebook-application-development-in-new-jersey/">Facebook Application Development</a></li>
+</ul>
+[/fusion_tab][fusion_tab title="SEO" icon="fa-search"]
+<ul>
+         <li>On Page</li>
+         <li>Local</li>
+         <li>Organic</li>
+         <li>Link building</li>
+         <li>Content Management</li>
+         <li>PPC</li>
+         <li>Google Adwords</li>
+</ul>
+[/fusion_tab][fusion_tab title="Website Development" icon="fa-globe"]
+<ul>
+         <li>Responsive Themes</li>
+         <li>Mobile Friendly</li>
+         <li><a href="http://tbsmo.com/wordpress-website-development/">CMS built into Site</a></li>
+         <li>Quick Edits</li>
+         <li>SEO Friendly</li>
+</ul>
+[/fusion_tab][fusion_tab title="Reputation" icon="fa-camera-retro"]
+<ul>
+         <li>Vitals</li>
+         <li>RateMDs</li>
+         <li>Yelp</li>
+         <li>Google</li>
+         <li>Healthtap</li>
+         <li>Trip Advisor</li>
+         <li>Amazon</li>
+         <li>Health Grades</li>
+         <li>RealSelf</li>
+         <li>ZocDoc</li>
+</ul>
+[/fusion_tab][fusion_tab title="Digital" icon="fa-eye"]
+<ul>
+         <li><a href="http://tbsmo.com/services/remarketingretargeting/">Remarketing</a></li>
+         <li><a href="http://tbsmo.com/services/affiliate-marketing/">Affiliate Marketing</a></li>
+         <li>Digital Media Buys</li>
+         <li><a href="http://tbsmo.com/services/what-is-content-marketing/">Content Marketing</a></li>
+         <li><a href="http://tbsmo.com/services/email-marketing/">Email Marketing</a></li>
+</ul>
+[/fusion_tab][fusion_tab title="Industry" icon="fa-bar-chart"]
+<ul>
+         <li><a href="http://tbsmo.com/e-commerce-industry/">ECommerce</a></li>
+         <li><a href="http://tbsmo.com/hospitality-industry/">Hospitality Industry</a></li>
+         <li><a href="http://tbsmo.com/medical-industry/">Medical Industry</a></li>
+         <li><a href="http://tbsmo.com/real-estate-industry/">Real Estate Industry</a></li>
+</ul>
+[/fusion_tab][/fusion_tabs][/fusion_builder_column_inner][fusion_builder_column_inner type="1_3" layout="1_3" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_progress height="30px" text_position="above_bar" show_percentage="no" unit="" percentage="89" filledcolor="#d91a09" filledbordersize="" filledbordercolor="" unfilledcolor="" striped="yes" animated_stripes="yes" textcolor="#000000" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="tb-progress" id=""]Likes - 89K[/fusion_progress][fusion_progress height="30px" text_position="above_bar" show_percentage="no" unit="" percentage="99" filledcolor="#d91a09" filledbordersize="" filledbordercolor="" unfilledcolor="" striped="yes" animated_stripes="yes" textcolor="#000000" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="tb-progress" id=""]Followers 99K[/fusion_progress][fusion_progress height="30px" text_position="above_bar" show_percentage="no" unit="" percentage="57" filledcolor="#d91a09" filledbordersize="" filledbordercolor="" unfilledcolor="" striped="yes" animated_stripes="yes" textcolor="#000000" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="tb-progress" id=""]Clicks - 57K[/fusion_progress][fusion_progress height="30px" text_position="above_bar" show_percentage="no" unit="" percentage="34" filledcolor="#d91a09" filledbordersize="" filledbordercolor="" unfilledcolor="" striped="yes" animated_stripes="yes" textcolor="#000000" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="tb-progress" id=""]Phone Calls - 34K[/fusion_progress][/fusion_builder_column_inner][/fusion_builder_row_inner][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container][fusion_builder_container hundred_percent="no" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="tb-homeSlider" background_color="#f5f5f5" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="50px" padding_right="" padding_bottom="50px" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" border_position="all" padding="0 0px 0 0px" margin_top="" margin_bottom="" animation_type="slide" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" element_content=""][fusion_title margin_top="20px" margin_bottom="20px" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" size="1" content_align="center" style_type="none" sep_color=""]
+<h1 class="wow zoomInLeft">What <span style="color: #d91a09;">Others</span> are <span style="color: #d91a09;">Saying</span></h1>
+[/fusion_title][fusion_separator style_type="single solid" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" sep_color="#d91a09" top_margin="0" bottom_margin="60px" border_size="3" icon="" icon_circle="" icon_circle_color="" width="40px" alignment="center" /][fusion_text]
+
+
+[wp_posts_carousel template="simple.css" post_types="post" all_items="10" show_only="id" exclude="" posts="" ordering="asc" categories="4" relation="and" tags="" show_title="true" show_created_date="false" show_description="content" allow_shortcodes="false" show_category="false" show_tags="false" show_more_button="false" show_featured_image="true" image_source="thumbnail" image_height="100" image_width="100" items_to_show_mobiles="1" items_to_show_tablets="2" items_to_show="4" slide_by="1" margin="5" loop="true" stop_on_hover="true" auto_play="false" auto_play_timeout="1200" auto_play_speed="800" nav="true" nav_speed="800" dots="true" dots_speed="800" lazy_load="false" mouse_drag="true" mouse_wheel="true" touch_drag="true" easing="linear" auto_height="true" custom_breakpoints=""]
+
+
+[/fusion_text][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container][fusion_builder_container hundred_percent="no" equal_height_columns="no" menu_anchor="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="tb-projects" background_color="#ffffff" background_image="" background_position="center center" background_repeat="no-repeat" fade="no" background_parallax="none" enable_mobile="no" parallax_speed="0.3" video_mp4="" video_webm="" video_ogv="" video_url="" video_aspect_ratio="16:9" video_loop="yes" video_mute="yes" overlay_color="" overlay_opacity="0.5" video_preview_image="" border_size="" border_color="" border_style="solid" margin_top="" margin_bottom="" padding_top="50px" padding_right="" padding_bottom="50px" padding_left=""][fusion_builder_row][fusion_builder_column type="1_1" layout="1_1" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" undefined="" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" border_position="all" padding="0 0px 0 0px" margin_top="" margin_bottom="" animation_type="slide" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" element_content=""][fusion_title margin_top="20px" margin_bottom="20px" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" size="1" content_align="center" style_type="none" sep_color=""]<h1 class="wow zoomInLeft"><span style="color: #d91a09;">Projects</span></h1>[/fusion_title][fusion_separator style_type="single solid" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" sep_color="#d91a09" top_margin="0" bottom_margin="60px" border_size="3" icon="" icon_circle="" icon_circle_color="" width="40px" alignment="center" /][fusion_builder_row_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="129" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://www.nba.com/cavaliers" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="bounce" animation_direction="up" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/cavs-131x82.png[/fusion_imageframe][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="130" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://www.bnerealestate.com/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="zoom" animation_direction="down" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/BNE_CS3-1.jpg[/fusion_imageframe][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="131" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://www.nba.com/cavaliers" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="flash" animation_direction="down" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/RutgersMedColor.png[/fusion_imageframe][/fusion_builder_column_inner][fusion_builder_column_inner type="1_4" layout="1_4" spacing="" center_content="no" hover_type="none" link="" min_height="" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" background_color="" background_image="" background_position="left top" background_repeat="no-repeat" border_size="0" border_color="" border_style="solid" padding="" dimension_margin="" animation_type="" animation_direction="left" animation_speed="0.3" animation_offset="" last="no" border_position="all"][fusion_imageframe image_id="132" style_type="none" stylecolor="" hover_type="none" bordersize="" bordercolor="" borderradius="" align="center" lightbox="no" gallery_id="" lightbox_image="" alt="" link="http://somerseturological.com/" linktarget="_self" hide_on_mobile="small-visibility,medium-visibility,large-visibility" class="" id="" animation_type="zoom" animation_direction="down" animation_speed="0.3" animation_offset=""]http://b2b.feb.myftpupload.com/wp-content/uploads/2016/10/sua-logo.png[/fusion_imageframe][/fusion_builder_column_inner][/fusion_builder_row_inner][/fusion_builder_column][/fusion_builder_row][/fusion_builder_container]
+<script>
+    jQuery(document).ready(
+        function(){
+            jQuery('.slide-service').click(
+                function(e){
+                    name=jQuery(this).attr("href").substring(1);
+                    jQuery("a[name='"+name+"']").velocity("scroll", {offset : -200});
+                }
+            );
+        }
+    );
+
+
+    jQuery(window).load(
+        function(){
+            var maxHeight1 = -1;
+
+
+            jQuery('.wp-posts-carousel-image').each(function() {
+                maxHeight1 = maxHeight1 > jQuery(this).height() ? maxHeight1 : jQuery(this).height();
+            });
+
+
+           jQuery('.wp-posts-carousel-image').each(function() {
+               jQuery(this).height(maxHeight1);
+           });
+
+
+        }
+    );
+</script>
+/*****Gumption's CSS*****/
+
+
+/*Logo*/
+a.fusion-logo-link img {
+    max-height: 80px;
+}
+
+
+/*Top Level Menu Text*/
+span.menu-text {
+    text-transform: uppercase;
+}
+
+
+/*Sub-menu*/
+#wrapper ul.sub-menu {
+    border-top: none;
+    background-color: #333333;
+}
+
+
+/*Sub-menu Text*/
+#wrapper .fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+
+
+/*Adds Padding to Main Nav, But Not Sticky Nav*/ 
+.fusion-header:not(.fusion-sticky-shadow) nav.fusion-main-menu {
+    padding-top: 40px;
+}
+
+
+/*Make Footer 100% width*/
+.fusion-footer .fusion-row {
+    max-width: 100%;
+}
+
+
+/*Footer Background Color*/
+footer.fusion-footer-widget-area.fusion-widget-area {
+    background-color: #f7f7f7;
+}
+
+
+/*Set max height on logo in footer*/
+div#text-3 img {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+/*Center content within first footer widget section*/
+div#text-3 {
+    text-align:center;
+}
+
+
+
+
+/*Set max-height on map in footer*/
+div#text-2 img {
+    max-height: 250px;
+}
+
+
+/*Center Headquarters section*/
+div#text-4 {
+    max-width: 185px;
+    margin: 0 auto;
+}
+
+
+/*Give padding to font awesome icons in footer*/
+div#text-4 .fa {
+    padding-right: 10px;
+}
+
+
+/*Change display of footer links*/
+body .fusion-footer-widget-area ul li a {
+    display: inline-block;
+}
+
+
+/*Space out headquarters details items*/
+ul.contacts li {
+    padding: 5px;
+}
+
+
+/*float font awesome icons in footer for proper presentation*/
+li.icon {
+    float: left;
+}
+
+
+/*Increase font size of widget title*/
+#wrapper h4.widget-title {
+    font-size: 14px;
+}
+
+
+/*Get's rid of social media icon hover bug*/
+a.fusion-social-network-icon {
+    display: initial!important;
+}
+
+
+/*Post Thumbnail Styling*/
+.post_thumbnail {
+    display: inline-block;
+}
+
+
+/*Post thumbnail image styling (in footer)*/
+.post_thumbnail img {
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+
+/*Article section styling*/
+section.blog_loop_widget .post {
+    margin-bottom: 10px;
+}
+
+
+/*Post details section*/
+.post_details {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+@media(max-width:480px){
+    #wrapper .post_details {
+        display: block;
+    }
+}
+
+
+/*Changing Padding on fusion tab*/
+a#fusion-tab-latest {
+    padding: 11px;
+}
+
+
+/*Padding of Post Meta*/
+.post_meta {
+    padding-bottom: 30px;
+}
+
+
+/*Fusion tab styling*/
+#text-5 h4.fusion-tab-heading {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*Jotform Padding*/
+#wrapper .jotform-form {
+    padding: 0;
+}
+
+
+/*Jotform Background Color*/
+#wrapper .form-all {
+    background: #f7f7f7;
+}
+
+
+/*Jotform Max Width*/
+#wrapper .form-all {
+    max-width: 100%;
+}
+
+
+/*Form Label Width*/
+#wrapper .form-label-left {
+    width: 75px !important;
+}
+
+
+/*Form Button*/
+button#input_2 {
+    background: none;
+    border: none;
+    box-shadow: none;
+    background-color: #dd3333;
+    text-shadow: none;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+
+/*Form field padding*/
+ul.form-section.page-section li {
+    padding-left: 0;
+}
+
+
+/*Form field font family*/
+.form-section label {
+    font-family: "Open Sans";
+    font-weight: normal;
+}
+
+
+/*Limit textarea width*/
+div#cid_7, textarea#input_7{
+    max-width: 100%;
+}
+
+
+/*center form on mobile*/
+@media(max-width:800px){
+    #wrapper #text-6 {
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Center Social links in footer*/
+div#social_links-widget-2 {
+    max-width: 240px;
+    margin: 0 auto;
+}
