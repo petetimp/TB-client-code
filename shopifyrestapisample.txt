@@ -1,0 +1,37 @@
+﻿<?php
+// Create the API URL using the private app credentials
+$api_url = 'https://9c37e43c1d50f91d676d7202fb56fde0:aebc311b678e841c2d57cecb109e0beb@new-vision-nutritio.myshopify.com';
+
+
+// Create the API URL for the Shopify shop object
+$shop_obj_url = $api_url . '/admin/shop.json';
+
+
+// Get the shop object content
+$shop_content = @file_get_contents( $shop_obj_url );
+
+
+// Decode the JSON
+$shop_json = json_decode( $shop_content, true );
+        
+// Create a variable to make the rest of the code more readable
+$shop = $shop_json['shop'];
+?>
+        
+Email is: <?php echo $shop['email']; ?>
+
+
+        
+Shopify store name: <?php echo $shop['name']; ?>
+
+
+        
+Shopify store owner: <?php echo $shop['shop_owner']; ?>
+
+
+<?php
+foreach($shop as $key => $value)
+ {
+  echo $key . ': ' . $value . '<br>';
+ }
+?>
