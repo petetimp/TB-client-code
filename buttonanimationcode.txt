@@ -1,0 +1,118 @@
+﻿HTML
+
+
+<div class="form__submit-button"><span><span class="stroke"><span class="txt">Products</span></span></span></div>
+
+
+CSS
+
+
+/*Form Submission Button Part 1*/
+    .form__submit-button {
+        width: 245px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+
+
+    /*Form Submission Button Part 2*/
+    .cta, .form__submit-button {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: BasisGrotesque-Bold;
+        margin-top: 30px;
+        padding-top: 15px;
+        display: block;
+        background-size: 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        cursor:pointer;
+        margin:30px auto 0;
+    }
+
+
+     /*Form Submission Button Span Part 1*/  
+    .form__submit-button.on-screen>span {
+       width: 100%;
+       opacity: 1;
+    }
+
+
+     /*Form Submission Button Span Part 2*/  
+    .form__submit-button>span {
+        display: block;
+        width: 0;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-transition: width .2s ease .3s;
+        transition: width .2s ease .3s;
+    }
+
+
+    /*Form Submission Button Animation*/ 
+    .stroke {
+        display: block;
+        width: 245px;
+        overflow: hidden;
+        padding: 20px 0;
+        background: url(http://283.d7a.myftpupload.com/wp-content/uploads/2016/11/bubble-3-1.png) 50% 50% no-repeat;
+        background-size: 100%;
+        -webkit-transition: background-size .2s;
+        transition: background-size .2s;
+        text-align: center;
+        font-family: "Open Sans";
+        font-weight: bold;
+    }
+
+
+    /*Form Submission Button Hover Animation*/ 
+    .stroke:hover {
+        background-size: 75%;   
+    }
+
+
+Javascript
+
+
+function isElementInViewport (el) {
+    
+    //special bonus for those using jQuery
+    /*if (typeof jQuery === "function" && el instanceof jQuery) {
+       el = el[0];
+    }*/
+    var rect = jQuery(".form__submit-button")[0].getBoundingClientRect();
+
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
+
+function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        //if (visible != old_visible) {
+           if (visible) {
+            old_visible = visible;
+            if (typeof callback == 'function') {
+                callback();
+            }
+        }
+    }
+}
+
+
+var handler = onVisibilityChange(jQuery(".form__submit-button"), function() {
+    jQuery(".form__submit-button").addClass("on-screen");
+});

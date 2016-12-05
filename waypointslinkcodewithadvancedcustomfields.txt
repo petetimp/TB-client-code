@@ -1,0 +1,163 @@
+﻿.highlighted#one-link{
+        color:<?php the_field( "question_1_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#two-link{
+        color:<?php the_field( "question_2_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#three-link{
+        color:<?php the_field( "question_3_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#four-link{
+        color:<?php the_field( "question_4_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#five-link{
+        color:<?php the_field( "question_5_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#six-link{
+        color:<?php the_field( "question_6_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#seven-link{
+        color:<?php the_field( "question_7_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#eight-link{
+        color:<?php the_field( "question_8_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#nine-link{
+        color:<?php the_field( "question_9_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#ten-link{
+        color:<?php the_field( "question_10_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#eleven-link{
+        color:<?php the_field( "question_11_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twelve-link{
+        color:<?php the_field( "question_12_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#thirteen-link{
+        color:<?php the_field( "question_13_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#fourteen-link{
+        color:<?php the_field( "question_14_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#fifteen-link{
+        color:<?php the_field( "question_15_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#sixteen-link{
+        color:<?php the_field( "question_16_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#seventeen-link{
+        color:<?php the_field( "question_17_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#eighteen-link{
+        color:<?php the_field( "question_18_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#nineteen-link{
+        color:<?php the_field( "question_19_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twenty-link{
+        color:<?php the_field( "question_20_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentyone-link{
+        color:<?php the_field( "question_21_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentytwo-link{
+        color:<?php the_field( "question_22_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentythree-link{
+        color:<?php the_field( "question_23_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentyfour-link{
+        color:<?php the_field( "question_24_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentyfive-link{
+        color:<?php the_field( "question_25_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentysix-link{
+        color:<?php the_field( "question_26_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentyseven-link{
+        color:<?php the_field( "question_27_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentyeight-link{
+        color:<?php the_field( "question_28_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#twentynine-link{
+        color:<?php the_field( "question_29_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#thirty-link{
+        color:<?php the_field( "question_30_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#thirtyone-link{
+        color:<?php the_field( "question_31_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#thirtytwo-link{
+        color:<?php the_field( "question_32_heading_background_color", 10 );?>!important;
+    }
+
+
+    .highlighted#thirtythree-link{
+        color:<?php the_field( "question_33_heading_background_color", 10 );?>!important;
+    }

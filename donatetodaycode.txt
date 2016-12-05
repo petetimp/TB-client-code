@@ -1,0 +1,150 @@
+﻿CSS
+
+
+/*Center donate today image on mobile devices*/
+@media(max-width:767px){
+    .donate_today div{
+        text-align:center!important;
+    }
+}
+
+
+/*Hide unneeded sections of donation form*/
+h2.give-form-title, fieldset#give-payment-mode-select, fieldset#give_checkout_user_info, p#give-final-total-wrap, button.give-donation-level-btn.give-btn.give-btn-level-custom.give-default-level {
+    display: none;
+}
+
+
+/*Donate Now Button*/
+input#give-purchase-button {
+    background-color: #00539e;
+    width: 100%;
+    padding: 15px;
+    font-family: Lato;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Donation amount box*/
+.give-donation-amount.form-row-wide {
+    float: left;
+    display: inline-block;
+    width: 36%;
+}
+
+
+/*For buttons*/
+ul#give-donation-level-button-wrap {
+    width: 63%;
+    display: inline-block;
+    border-left: 2px solid black;
+}
+
+
+@media(max-width:1140px){
+    
+    /*Donation amount box*/
+    .give-donation-amount.form-row-wide {
+        width: 100%;
+    }
+
+
+    /*For buttons*/
+    ul#give-donation-level-button-wrap {
+        width: 100%;
+        border-left: none;
+        max-width:350px;
+    }   
+}
+
+
+@media(max-width:767px){
+    /*Donation amount box*/
+    .give-donation-amount.form-row-wide {
+        width: 167px;
+        margin: 0 auto 20px!important;
+        display: block;
+        position: relative;
+        left: 50%;
+        margin-left: -83.5px!important;
+    }
+    
+    /*For buttons*/
+    ul#give-donation-level-button-wrap {
+        display: block;
+        margin: 0 auto;
+    } 
+}
+
+
+/*Hide custom donation button*/
+button.give-donation-level-btn.give-btn.give-btn-level-custom {
+    display: none;
+}
+
+
+/*Padding for Give Form*/
+form#give-form-37 {
+    padding-top: 40px;
+}
+
+
+@media(max-width:767px){
+    /*Get rid of form padding on mobile*/
+    form#give-form-37 {
+        padding-top: 0;
+    }
+}
+
+
+/*For button styling*/
+.give-btn {
+    background-color: #8dc63f;
+    font-family: Lato;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    width: 160px;
+}
+
+
+/*Give button hover color*/
+.give-btn:hover {
+    background: #0051a1;
+}
+
+
+/*For button container (li) css*/
+#give-donation-level-button-wrap>li {
+    float: right;
+}
+
+
+@media(max-width:375px){
+    /*For button container (li) css*/
+    #give-donation-level-button-wrap>li {
+        float: none;
+        text-align: center;
+    }
+}
+
+
+/*Money Box Border*/
+form[id*=give-form] .give-donation-amount #give-amount, form[id*=give-form] .give-donation-amount #give-amount-text {
+    border: 1px solid black;
+    font-size: 26px;
+    font-family: Lato;
+}
+
+
+/*Money box dollar sign*/
+form[id*=give-form] .give-donation-amount .give-currency-symbol {
+    background-color: #8dc63f;
+    color: white;
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 400;
+}

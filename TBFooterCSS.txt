@@ -1,0 +1,199 @@
+﻿/*Make Footer 100% width*/
+.fusion-footer .fusion-row {
+    max-width: 100%;
+}
+
+
+/*Footer Background Color*/
+footer.fusion-footer-widget-area.fusion-widget-area {
+    background-color: #f7f7f7;
+}
+
+
+/*Set max height on logo in footer*/
+div#text-3 img {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+/*Center content within first footer widget section*/
+div#text-3 {
+    text-align:center;
+}
+
+
+
+
+/*Set max-height on map in footer*/
+div#text-2 img {
+    max-height: 250px;
+}
+
+
+/*Center Headquarters section*/
+div#text-4 {
+    max-width: 185px;
+    margin: 0 auto;
+}
+
+
+/*Give padding to font awesome icons in footer*/
+div#text-4 .fa {
+    padding-right: 10px;
+}
+
+
+/*Change display of footer links*/
+body .fusion-footer-widget-area ul li a {
+    display: inline-block;
+}
+
+
+/*Space out headquarters details items*/
+ul.contacts li {
+    padding: 5px;
+}
+
+
+/*float font awesome icons in footer for proper presentation*/
+li.icon {
+    float: left;
+}
+
+
+/*Increase font size of widget title*/
+#wrapper h4.widget-title {
+    font-size: 14px;
+}
+
+
+/*Get's rid of social media icon hover bug*/
+a.fusion-social-network-icon {
+    display: initial!important;
+}
+
+
+/*Post Thumbnail Styling*/
+.post_thumbnail {
+    display: inline-block;
+}
+
+
+/*Post thumbnail image styling (in footer)*/
+.post_thumbnail img {
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+
+/*Article section styling*/
+section.blog_loop_widget .post {
+    margin-bottom: 10px;
+}
+
+
+/*Post details section*/
+.post_details {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+@media(max-width:480px){
+    #wrapper .post_details {
+        display: block;
+    }
+}
+
+
+/*Changing Padding on fusion tab*/
+a#fusion-tab-latest {
+    padding: 11px;
+}
+
+
+/*Padding of Post Meta*/
+.post_meta {
+    padding-bottom: 30px;
+}
+
+
+/*Fusion tab styling*/
+#text-5 h4.fusion-tab-heading {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*Jotform Padding*/
+#wrapper .jotform-form {
+    padding: 0;
+}
+
+
+/*Jotform Background Color*/
+#wrapper .form-all {
+    background: #f7f7f7;
+}
+
+
+/*Jotform Max Width*/
+#wrapper .form-all {
+    max-width: 100%;
+}
+
+
+/*Form Label Width*/
+#wrapper .form-label-left {
+    width: 75px !important;
+}
+
+
+/*Form Button*/
+button#input_2 {
+    background: none;
+    border: none;
+    box-shadow: none;
+    background-color: #dd3333;
+    text-shadow: none;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+
+/*Form field padding*/
+ul.form-section.page-section li {
+    padding-left: 0;
+}
+
+
+/*Form field font family*/
+.form-section label {
+    font-family: "Open Sans";
+    font-weight: normal;
+}
+
+
+/*Limit textarea width*/
+div#cid_7, textarea#input_7{
+    max-width: 100%;
+}
+
+
+/*center form on mobile*/
+@media(max-width:800px){
+    #wrapper #text-6 {
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Center Social links in footer*/
+div#social_links-widget-2 {
+    max-width: 240px;
+    margin: 0 auto;
+}

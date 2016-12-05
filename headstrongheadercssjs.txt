@@ -1,0 +1,151 @@
+﻿CSS
+
+
+/*Position of Social Icon lis and ul need to be adjusted after annexation of search icon*/
+header:not(.a-sticky) .mk-header-social.toolbar-section ul li, .mk-header-social.toolbar-section ul {
+    height: 30px;
+    position: relative;
+    top: -15px;
+}
+
+
+/*Hide the default search icon in the main menu bar*/
+.main-nav-side-search {
+    display: none;
+}
+
+
+/*Italicize tagline text*/
+span.mk-header-tagline {
+    font-style: italic;
+}
+
+
+@media(min-width:1140px){
+    /*Adjust positioning of logo*/
+    header .header-logo img {
+        top: 60%;
+    }
+
+
+    /*Add padding to header with CSS*/
+    header .mk-header-bg {
+        padding: 10px;
+        opacity:1;
+    }
+}
+
+
+/*Adjust margin of menu item*/
+header nav .main-navigation-ul li.menu-item {
+    margin-top: 10px;
+}
+
+
+/*FontAwesome chevron for main menu*/
+a i.fa.fa-chevron-down {
+    padding-left: 10px;
+    color: #0051a1;
+}
+
+
+/*Main menu item styling (first 3 items)*/
+#menu-main-menu .menu-item a.menu-item-link {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #0051a1;
+}
+
+
+/*Main menu item styling (last 2 items)*/
+#menu-main-menu li.menu-item:nth-child(4) a.menu-item-link, #menu-main-menu li.menu-item:nth-child(5) a.menu-item-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 10px !important;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+
+
+/*Get rid of green underline on last 2 menu items*/
+#menu-main-menu li.menu-item:nth-child(4) a.menu-item-link:after, #menu-main-menu li.menu-item:nth-child(5) a.menu-item-link:after {
+    display:none;
+}
+
+
+/*Main menu item styling (4th item)*/
+#menu-main-menu li.menu-item:nth-child(4) a.menu-item-link{
+    background-color: #68bc50;  
+}
+
+
+/*Main menu item styling (5th item)*/
+#menu-main-menu li.menu-item:nth-child(5) a.menu-item-link{
+    background-color: #c64444;
+}
+
+
+/*Make sure header toolbar shows in sticky mode*/
+body .sticky-style-fixed.header-style-1.a-sticky .mk-header-holder{
+    top: 0!important;
+}
+
+
+/*Make sure header toolbar shows in sticky mode (while logged in)*/
+body.admin-bar .sticky-style-fixed.header-style-1.a-sticky .mk-header-holder{
+    top: 32px!important;
+}
+
+
+/*Float header toolbar for proper positioning*/
+nav.mk-toolbar-navigation {
+    float: right;
+}
+
+
+/*Style header toolbar menu text*/
+span.meni-item-text {
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+/*Adjust margin of Woocommerce shopping cart icon*/
+body a.mk-shoping-cart-link {
+    margin-top: 10px!important;
+    display: block;
+}
+
+
+/*Change background color of burger and close menu icon on mobile*/
+body .mk-css-icon-close div, body .mk-css-icon-menu div {
+    background-color: #0051a1;
+}
+
+
+Javascript
+
+
+<script>
+    jQuery(document).ready(
+        function(){
+
+
+            /*Move the search icon next to the social icons in the top header*/
+            jQuery('<li><a class="mk-search-trigger add-header-height mk-fullscreen-trigger" href="#"><i class="mk-svg-icon-wrapper"><svg class="mk-svg-icon" data-name="mk-icon-search" data-cacheid="icon-582ed78fb2727" style=" height:16px; width: 14.857142857143px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1664 1792"><path d="M1152 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg></i></a></li>').insertAfter(jQuery(".mk-header-social.toolbar-section ul li:nth-child(6)"));
+
+
+            /*Add Chevrons to first 3 menu items in header*/
+            jQuery('ul#menu-main-menu li:first-child a,ul#menu-main-menu li:nth-child(2) a,ul#menu-main-menu li:nth-child(3) a').append('<i class="fa fa-chevron-down"></i>');
+
+
+            /*Place header toolbar appropriately according to mockup*/
+            jQuery('.mk-toolbar-navigation').insertAfter(jQuery(".mk-header-social"));
+        }
+    );
+</script>

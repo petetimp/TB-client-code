@@ -1,0 +1,19 @@
+﻿jQuery(document).ready(
+                function(){
+                <?php
+                $gumptionArray=["one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty","twentyone","twentytwo","twentythree","twentyfour","twentyfive","twentysix","twentyseven","twentyeight","twentynine","thirty","thirtyone","thirtytwo","thirtythree"];
+                for($gumptionIndex=0; $gumptionIndex < count($gumptionArray); $gumptionIndex++){
+                ?>
+                 
+                    var waypoint = new Waypoint({
+                        element: document.getElementById("<?php echo $gumptionArray[$gumptionIndex];?>"),
+                        handler: function() {
+                            var selector="#"+this.element.id + "-link";
+                            jQuery(".nav-list li a").removeClass("highlighted"); 
+                            jQuery(selector).addClass("highlighted"); 
+                        },
+                        offset: 150
+                    });
+                <?php 
+                }
+                ?>
