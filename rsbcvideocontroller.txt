@@ -1,0 +1,108 @@
+﻿JS/PHP
+
+
+<?php
+    if(is_front_page()){
+?>
+        <script>
+            jQuery(window).load(
+                function(){
+                    if(innerWidth >=768){
+                        //Preview Video URL Custom Field
+                        jQuery('<video autoplay="<?php echo get_field( "video_autoplay" );?>" loop="<?php echo get_field( "video_loop" );?>" <?php if(get_field("video_controls")=="true"){echo "controls";};?>" src="<?php echo get_field( "video_url" );?>" style="position: absolute;left: 0;top: calc(86px + 5%);max-width: 100%;width: calc(200% / 3);margin: 0 calc(100% / 6);height: 100%;" id="okplayer2"></video>').insertAfter(jQuery("#okplayer-mask"));
+                    }else{//Mobile version
+                        jQuery('<video loop="<?php echo get_field( "video_loop" );?>" controls src="<?php echo get_field( "video_url" );?>" style="position: absolute;left: 0;top: calc(86px + 5%);max-width: 100%;width: calc(200% / 3);margin: 0 calc(100% / 6);height: 100%;" id="okplayer2"></video>').insertAfter(jQuery("#okplayer-mask"));    
+                    }
+
+
+                    //Instructional Video Controller and Custom Field
+                    jQuery('<video src="<?php echo get_field( "video_2_url" );?>" style="position: absolute;left: 0;top: calc(86px + 5%);max-width: 100%;width: calc(200% / 3);margin: 0 calc(100% / 6);height: 100%;" id="okplayer3"></video>').insertAfter(jQuery("#okplayer2"));
+
+
+                    jQuery(".rsbc_play_button img").click(//Hide the preview video and play the instructional video
+                        function(){
+                            jQuery(".rsbc_play_button img").css("display","none");
+                            jQuery(".pause_container img").css("display","block");
+
+
+                            if(jQuery("#okplayer3").css("display")=="none"){
+                                jQuery("#okplayer2").slideUp();
+                                jQuery("#okplayer3").slideDown();
+                            }
+                            //Resume playing the instructional video
+                            document.getElementById("okplayer3").play();    
+                        }
+                    );
+
+
+                    jQuery(".pause_container img").click(
+                        function(){
+                            jQuery(".pause_container img").css("display","none"); 
+                            jQuery(".rsbc_play_button img").css("display","block");
+                            document.getElementById("okplayer3").pause();
+                        }
+                    );
+                }
+            );
+        </script>
+<?php
+    }
+?>
+
+
+CSS
+
+
+@media(max-width:767px){
+    div#video_list_parent {
+        font-size:15px;
+        top: 300px;
+    }
+    
+    .rsbc_play_button {
+        display:none;
+    }
+}
+
+
+.rsbc_play_button {
+    bottom: 130px;
+    position: absolute;
+    width: 100%;
+    padding-right: 53px;
+}
+
+
+.rsbc_play_button img, .pause_container img{
+    cursor:pointer;
+}
+
+
+.pause_container img{
+    display:none;
+}
+
+
+.pause_container {
+    position: absolute;
+    bottom: 7%;
+    left: 17%;
+}
+
+
+@media(max-width:767px){
+    #okplayer2{
+        left: 0!important;
+        top: 275px!important;
+        max-width: 100%!important;
+        width: 100%!important;
+        margin: 0 auto!important;
+        height: 300px!important;
+        z-index:20;
+    }
+}
+
+
+#okplayer3{
+    display:none;
+}
