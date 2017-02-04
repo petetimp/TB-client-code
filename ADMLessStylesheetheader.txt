@@ -1,0 +1,128 @@
+﻿#page {
+    font-family:"Raleway"; 
+        
+    header#masthead {
+        background: url(/wp-content/uploads/2016/10/header_background-e1477533503120.png);
+                    
+                    img#gray-background {
+            position: absolute;
+            width: 110px;
+            right: 90px;
+        }
+                
+                    .site-branding.container {
+            padding: 30px 100px;
+            width: 100%;
+                        
+                              p.site-description {
+                display: none;
+            }
+                        
+                              .custom-logo {
+                margin-top: 12.5px;
+            }
+                        
+                              div#right_logo_section a {
+                display: block;
+                text-align: center;
+                width: 90px;
+                float: right;
+                clear: both;
+                                
+                                        @media (max-width:992px) and (min-width:768px){
+                                            position: absolute;
+                    right: 15px;
+                    top: -60px;
+                                        }
+                                
+                                        @media (max-width:767px){
+                                            width: 100%;
+                    max-width: 100px;
+                    margin: 0 auto;
+                                                  float:none;
+                                                  position: relative;
+                    left: 50%;
+                    margin-left: -45px;
+                    top: 25px;
+                                        }
+                                
+                                        @media(max-width:425px){
+                    max-width: 80px;
+                    margin-left: -36px;
+                    top: 30px;
+                                        }
+            }
+                        
+                              /*img#adm_fb {
+                width: 25px;
+            }*/
+                        
+                              @media (max-width: 767px){
+                .header-banner {
+                    display: initial;
+                }
+                              }
+                        
+                          @media (max-width:767px){
+            padding: 30px 20px;
+              }
+                        
+        }
+                
+                    nav#site-navigation {
+            background-color: #525254;
+                              height: 50px;
+                                        
+                              .nav-menu > li > a{
+                                        font-family:"Raleway";
+                                        color:white;
+                                        text-transform:lowercase;
+                                        font-size: 18px;
+                font-weight: 300;
+                                        padding: 0;
+                        }
+                        
+            .nav-menu > li {
+                padding-right: 15px;
+                                        padding-left:15px;
+                                        border-right: 1px solid white;
+                                        margin-top: 12px;
+                                
+                                        @media (max-width:599px){
+                    padding-right: 0;
+                    padding-left: 0;
+                    border-right: none;
+                                                  text-align:center;
+                }
+            }
+                        
+                              .nav-menu > li:first-child{
+                                  padding-left:0;
+                              }
+                        
+                              .nav-menu > li:last-child{
+                                  padding-right:0;
+                                        border-right: none;
+                                
+                                        @media (max-width:599px){
+                    padding-bottom:10px;
+                }
+                              }
+                        
+                              .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+                color: white;
+            }
+                                
+                              @media (min-width:600px) and (max-width:991px){
+                height: 90px;
+            }
+                        
+                              @media (max-width:599px){
+                height: auto;
+            }
+                        
+        }
+                
+    }        
+        
+}
