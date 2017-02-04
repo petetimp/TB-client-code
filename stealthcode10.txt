@@ -1,0 +1,324 @@
+﻿CSS
+
+
+/****Gumption's CSS****/
+
+
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+}
+
+
+.staelth_app, footer#contact .inner_part .row:not(:last-child), section#videos {
+    display: none;
+}
+
+
+.navbar .navbar-brand {
+    padding: 5px 15px;
+}
+
+
+.navbar-brand>img {
+    width: 150px;
+}
+
+
+header.navbar.navbar-inverse.navbar-fixed-top, .navbar-header {
+    min-height: 95px;
+}
+
+
+.banner.gumption-banner img {
+    max-width: 450px;
+    margin: 50px auto;
+    display: block;
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+@media(max-width:500px){
+    .banner.gumption-banner img {
+        max-width: 100%;
+    }
+}
+
+
+.banner.gumption-banner video {
+    max-width: 600px;
+}
+
+
+body .stealth_team p {
+    word-break: inherit;
+}
+
+
+footer#contact img {
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+body .site_footer .inner_part {
+    padding: 20px 0 60px;
+    background: url(../images/left_top_art.png) no-repeat right top;
+}
+
+
+div#see-it-button {
+    width: 200px;
+    padding: 10px 20px;
+    border: 3px solid #95c93d;
+    border-radius: 10px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+div#see-it-button:hover{
+    color:black;
+    background-color:#95c93d;
+}
+
+
+div#see-it-button span {
+    font-weight: bold;
+}
+
+
+@media(max-width:991px){
+    #p_g_i .border_section p, #p_g_i .border_section h2{
+        display: inline-block;
+        float: left;
+        clear: both;
+        background-color: rgba(0,0,0,.6);
+        padding: 4px 10px;
+        border-radius: 4px;
+        color: white!important;
+    }
+
+
+
+
+    body .trainer_text {
+        position: relative;
+        left: 0px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+@media (max-width: 767px){
+    .site_footer .inner_part {
+        padding: 25px 0 15px;
+    }
+
+
+}
+
+
+@media (max-width:550px){
+    .forget_your_workout h2 {
+        margin: 100px 0 10px;
+    }
+
+
+    .how_to_use h2 {
+        margin: 10px 0 10px!important;
+    }
+
+
+    .forget_your_workout h2 {
+        margin: 100px 0 10px!important;
+    }
+}
+
+
+.site_footer .form-wrapper {
+    padding: 40px 45px 0;
+    text-align: center;
+}
+
+
+body .form-all {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+
+button#input_2:hover {
+    background-color: white;
+    color:black;
+}
+
+
+button#input_2 {
+    background: none;
+    text-shadow: none;
+    color: white;
+    box-shadow: none;
+    border-color: #7bff00;
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+
+div#cid_3 input {
+    border-radius: 10px;
+    padding: 9px;
+    border: none;
+    color: black;
+}
+
+
+div#cid_2 > div {
+    margin-left: 0!important;
+}
+
+
+body .form-line {
+    display: inline-block;
+    width: auto;
+}
+
+
+img.alignnone.wp-image-232.size-medium {
+    margin-bottom: 0;
+}
+
+
+label#label_3 {
+    display: none;
+}
+
+
+ul.form-section.page-section {
+    text-align: center;
+}
+
+
+body .jotform-form {
+    padding: 0px 0;
+}
+
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+
+
+div#team img {
+    max-height: 350px;
+    width: auto;
+}
+
+
+@media(max-width:450px){
+    footer#contact img {
+        max-width:100%;
+    }
+}
+
+
+/*.banner.gumption-banner {
+    background-image: url(/wp-content/uploads/2016/10/main-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 95px;
+}
+
+
+@media(max-width:1700px){
+    .banner.gumption-banner {
+        background-size: contain;
+    }
+}
+
+
+@media(max-width:767px){
+    .banner.gumption-banner {
+        background-attachment: scroll;
+        background-position: center 40px;
+    }
+}*/
+
+
+Javascript
+
+
+$("#flipcountdownbox").flipcountdown({
+            size:"sm",
+            showHour:true,
+            showMinute:true,
+            showSecond:false,
+            beforeDateTime: '10/19/2016'
+        });
+    
+jQuery(document).ready(
+                        function(){
+                            jQuery("#see-it-button").click(
+                                function(e) {
+                                    e.preventDefault();
+                                    jQuery('html, body').animate({
+                                        scrollTop: jQuery("#see-it-hook").offset().top
+                                    }, 1000);
+                                }
+                            );
+                        }
+                    );
+
+
+HTML
+
+
+<div class="banner gumption-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://cdn.rawgit.com/petetimp/7264643ccac263ebca09b2bbd1bfefb4/raw/8513ec2c703c236b647ecdf31cccfff39830eab2/stealth.svg"/>
+                <a id="see-it-hook"></a>
+                <h3 style="text-align: center; color: #000000;font-size:30px;text-transform:uppercase">See it first on <img class="alignnone wp-image-232 size-medium" src="/wp-content/uploads/2016/10/kickstarter-logo-dark.png" width="300" height="35"></h3>
+            </div>
+            <div class="col-md-6">
+                <div style="text-align: center;"><video style="width: 100%; height: auto;padding-top:75px;" autoplay="autoplay" controls="controls"><source src="/wp-content/uploads/2016/10/stealth_stealth_05-max-24second_teaser.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+                <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.15113" type="text/javascript"></script>
+<script type="text/javascript"> JotForm.init(function(){ setTimeout(function() { $('input_3').hint('E-mail'); }, 20); JotForm.clearFieldOnHide="disable"; JotForm.onSubmissionError="jumpToFirstError"; });
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.15113" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.15113" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.15113" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+<style type="text/css"> .form-label-left{ width:150px !important; } .form-line{ padding-top:12px; padding-bottom:12px; } .form-label-right{ width:150px !important; } .form-all{ width:690px; color:#555 !important; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif; font-size:14px; } .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{ color: #555; } </style> <form class="jotform-form" action="https://submit.jotform.us/submit/62738159269166/" method="post" name="form_62738159269166" id="62738159269166" accept-charset="utf-8"> <input type="hidden" name="formID" value="62738159269166" /> <div class="form-all"> <ul class="form-section page-section"> <li class="form-line" data-type="control_email" id="id_3"> <label class="form-label form-label-left form-label-auto" id="label_3" for="input_3"> </label> <div id="cid_3" class="form-input jf-required"> <input type="email" class=" form-textbox validate[Email]" id="input_3" name="q3_input3" size="30" value="" placeholder="E-mail" /> </div> </li> <li class="form-line" data-type="control_button" id="id_2"> <div id="cid_2" class="form-input-wide"> <div style="margin-left:156px" class="form-buttons-wrapper"> <button id="input_2" type="submit" class="form-submit-button"> SEE IT FIRST </button> </div> </div> </li> <li style="display:none"> Should be Empty: <input type="text" name="website" value="" /> </li> </ul> </div> <input type="hidden" id="simple_spc" name="simple_spc" value="62738159269166" /> <script type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "62738159269166-62738159269166"; </script>
+</form>
+<script type="text/javascript">JotForm.ownerView=true;</script>
+            </div>
+        </div>
+    </div>
+</div>
