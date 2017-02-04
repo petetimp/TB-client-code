@@ -1,0 +1,133 @@
+﻿HTML
+
+
+<!--Begin CTCT Sign-Up Form-->
+<!-- EFD 1.0.0 [Mon Nov 21 00:16:18 EST 2016] -->
+<div class="ctct-embed-signup">
+<div>
+<form class="ctct-custom-form Form" action="https://visitor2.constantcontact.com/api/signup" method="POST" name="embedded_signup" data-id="embedded_signup:form">
+<h2>Sign up for the latest HEADstrong news</h2>
+
+
+<!-- The following code must be included to ensure your sign-up form works properly. -->
+<input name="ca" type="hidden" value="--CA_REPLACE--" data-id="ca:input" />
+<input name="source" type="hidden" value="EFD" data-id="source:input" />
+<input name="required" type="hidden" value="email" data-id="required:input" />
+<input name="url" type="hidden" value="" data-id="url:input" />
+<p data-id="Email Address:p"><input name="email" type="text" value="Please enter your email address" data-id="Email Address:input" /></p>
+<button class="Button ctct-button Button--block Button-secondary" type="submit" data-enabled="enabled">Sign Up</button>
+<div>
+</div>
+</form></div>
+</div>
+<script type='text/javascript'>
+   var localizedErrMap = {};
+   localizedErrMap['required'] =                 'This field is required.';
+   localizedErrMap['ca'] =                         'An unexpected error occurred while attempting to send email.';
+   localizedErrMap['email'] =                         'Please enter your email address';
+   localizedErrMap['generic'] =                 'This field is invalid.';
+   var postURL = 'https://visitor2.constantcontact.com/api/signup';
+</script>
+<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
+<!--End CTCT Sign-Up Form-->
+
+
+CSS
+
+
+/*Constant Contact Form Container*/
+.mk-main-wrapper-holder:last-child .theme-page-wrapper {
+    width: 100%;
+    max-width: none;
+}
+#theme-page .mk-main-wrapper-holder:last-child .theme-page-wrapper .theme-content {
+    padding: 0;
+}
+
+
+/*Get rid of margin at bottom of section*/
+div#constant_contact_form .wpb_raw_html {
+    margin-bottom: 0;
+}
+
+
+/*Signup form button*/
+div#constant_contact_form button {
+    background: none;
+    border: none;
+    background-color: black;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Lato;
+}
+
+
+/*Signup form heading*/
+div#constant_contact_form h2 {
+    text-transform: none;
+    color: #00539e;
+    font-family: Lato;
+    width: 700px;
+    display: inline-block;
+}
+@media(max-width:1200px){
+    div#constant_contact_form h2 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+/*Constant Contact Form*/
+div#constant_contact_form form {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/*Constant Contact Form Background*/
+div#constant_contact_form .ctct-embed-signup > div {
+    background-color: #f0f0f0;
+    padding: 20px 15px 0;
+}
+@media(max-width:1200px){
+    div#constant_contact_form .ctct-embed-signup > div {
+        padding-bottom: 20px;
+    }
+}
+
+
+/*Constant Contact email field*/
+div#constant_contact_form p[data-id="Email Address:p"] {
+    width: 325px;
+    display: inline-block;
+}
+@media(max-width:1200px){
+    div#constant_contact_form p[data-id="Email Address:p"] {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+
+/*Constant Contact email field input*/
+div#constant_contact_form p[data-id="Email Address:p"] input {
+    width: 300px;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 16px;
+    color: #999999;
+    border: 1px solid #999999;
+    margin-top: 5px;
+}
+@media(max-width:1200px){
+    div#constant_contact_form button {
+        margin: 0 auto;
+        display: block;
+    }
+}
