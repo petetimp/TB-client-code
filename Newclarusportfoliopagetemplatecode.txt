@@ -1,0 +1,143 @@
+﻿CSS
+<style>
+    h4.fusion-carousel-title, .project-content.clearfix h3, .project-content.clearfix h4, #wrapper .related-posts.single-related-posts h3 {
+        font-family:Caviar Dreams!important;
+    }
+
+
+    #wrapper .related-posts.single-related-posts h3{
+        font-weight:bold!important;
+    }
+
+
+    div#main {
+        padding: 0 0 180px!important;
+    }
+
+
+    #gumption-parallax-2, #gumption-parallax-3{
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 0 40px;
+        position:relative;
+    }
+
+
+    #gumption-parallax-2 .heading , #gumption-parallax-3 .heading {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+    }
+
+
+    .gumption-slider-container {
+        position: relative;
+    }
+
+
+    .gumption-slider-container .slide-content-container {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        padding: 0;
+        z-index: 5;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+
+    #wrapper h3.title-heading-left {
+        line-height: 40px!important;
+        font-family: Caviar Dreams;
+        padding: 0 20px;
+    }
+
+
+    .gumption-slider-container  .slide-content-container .slide-content {
+        max-width: 100%;
+    }
+    
+    .gumption-slider-container  .slide-content-container .slide-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        max-width: 940px;
+    }
+
+
+    .gumption-slider-container .slide-content-container .heading {
+    margin: 0 0 10px 0;
+}
+   .gumption-slider-container .slide-content-container .heading, .tfs-slider .slide-content-container .caption {
+        display: block;
+    }
+
+
+     .gumption-slider-container .slide-content-container .fusion-title-sc-wrapper {
+        display: inline-block;
+        padding: 0;
+        line-height: 1;
+    }
+
+
+    .single-navigation.clearfix,  .fusion-flexslider.flexslider.fusion-post-slideshow.post-slideshow, .project-description.post-content.fusion-project-description-details, .project-info {
+        display: none;
+    }
+
+
+    .avada_portfolio.type-avada_portfolio.status-publish.format-standard.has-post-thumbnail.hentry {
+        padding: 0 40px;
+    }
+
+
+    
+
+
+</style>
+JS
+<script>
+   jQuery(window).load(
+       function(){
+           var slide_height=jQuery(".slides .background").css("height");
+           console.log(slide_height);
+           jQuery("#gumption-parallax-2, #gumption-parallax-3").css("height",slide_height);
+       }
+    );
+</script>  
+
+
+PHP/HTML
+<?php if (is_single(1619) || is_single(1559)){?>
+
+
+<div class="gumption-slider-container">
+  <div class="slide-content-container slide-content-left" style="padding-top: 159px;">
+    <div class="slide-content" style="opacity: 1; ">
+      <div class="caption ">
+        <div class="fusion-title-sc-wrapper">
+          <div class="fusion-title title fusion-sep-none fusion-title-size-three fusion-border-below-title">
+            <h3 class="title-heading-left" style="color: rgb(255, 255, 255); font-size: 22px; line-height: 26px;" data-inline-fontsize="true" data-inline-lineheight="true" data-fontsize="22" data-lineheight="26"><?php echo get_post_meta( $post->ID, 'gumption_slide_2_content', true ); ?></h3>
+          </div>
+        </div>
+      </div>
+      <div class="buttons"> </div>
+    </div>
+  </div>
+  <div class="gumption-parallax-<?php echo the_ID(); ?> background background-image" id="gumption-parallax-2" style="background-image:url(<?php echo get_post_meta( $post->ID, 'gumption_slide_2', true ); ?>)" > </div>
+</div>
+<div class="gumption-slider-container">
+  <div class="slide-content-container slide-content-left" style="padding-top: 159px;">
+    <div class="slide-content" style="opacity: 1; ">
+      <div class="caption ">
+        <div class="fusion-title-sc-wrapper">
+          <div class="fusion-title title fusion-sep-none fusion-title-size-three fusion-border-below-title">
+            <h3 class="title-heading-left" style="color: rgb(255, 255, 255); font-size: 22px; line-height: 26px;" data-inline-fontsize="true" data-inline-lineheight="true" data-fontsize="22" data-lineheight="26"><?php echo get_post_meta( $post->ID, 'gumption_slide_3_content', true ); ?></h3>
+          </div>
+        </div>
+      </div>
+      <div class="buttons"> </div>
+    </div>
+  </div>
+  <div class="gumption-parallax-<?php echo the_ID(); ?> background background-image" id="gumption-parallax-3" style="background-image:url(<?php echo get_post_meta( $post->ID, 'gumption_slide_3', true ); ?>)" > </div>
+</div>
