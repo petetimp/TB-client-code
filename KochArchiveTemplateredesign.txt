@@ -1,0 +1,118 @@
+﻿CSS.
+
+
+archive div#layerslider_23 {
+    display: none;
+}
+
+
+.archive .fusion-rollover {
+    display: none;
+}
+
+
+.archive .fusion-image-wrapper {
+    cursor: pointer;
+}
+
+
+.archive .fusion-post-content h1 {
+    font-size: 19px!important;
+    font-weight: bold;
+}
+
+
+.archive .post-5756 .fusion-post-content.post-content h3 {
+        margin-bottom: 10px!important;
+    }
+
+
+.archive #wrapper img[src*="unitops"], .archive #wrapper img[src*="k-quips"] {
+    max-width: 253px;
+    margin: 0 auto;
+}
+
+
+.archive .fusion-post-content-container p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f78801;
+}
+
+
+.archive h2.entry-title {
+    display: none;
+}
+
+
+.archive .fusion-content-sep{
+    border-color: #ebeaea;
+    margin-bottom:20px;
+}
+
+
+.archive .fusion-post-content-container {
+    margin-top: 10px;
+}
+
+
+.archive div#post-5752 h3 {
+    margin-bottom: 20px!important;
+}
+
+
+.archive ul.nav-tabs.nav-justified li {
+    border-bottom: 1px dashed gray;
+}
+
+
+.archive div#archives-2 li {
+    border-bottom: 1px dashed gray;
+}
+
+
+Javascript/PHP
+
+
+<?php if ( is_archive() ) { ?>
+        <script>
+    jQuery(document).ready(
+        function(){
+            jQuery(".post-5754 .fusion-rollover-title a").text("Unit Ops, Vol1. No.1");
+            jQuery(".fusion-image-wrapper img").css("cursor","pointer");
+            jQuery(".post-5752 .fusion-image-wrapper img").click(
+                function(){
+                    location.href="https://modularprocess.com/2016/10/k-quips-october/";
+                }
+            );
+            jQuery(".post-5754 .fusion-image-wrapper img").click(
+                function(){
+                    location.href="https://modularprocess.com/2016/10/unit-ops-vol-1-no-1/";
+                }
+            );
+            jQuery(".post-5756 .fusion-image-wrapper img").click(
+                function(){
+                    location.href="https://modularprocess.com/2016/10/newsletter/";
+                }
+            );
+
+
+            jQuery("#post-5754 .fusion-post-content h1").text("Unit Ops");
+            jQuery("#post-5752 .fusion-post-content h1").text("K-Quips");
+            jQuery("#post-5756 .fusion-post-content h1").text("Newsletter");
+
+
+            jQuery('<h3 style="margin-bottom:20px; font-size: 16px; font-weight: bold;" data-fontsize="16" data-lineheight="24">The Case of the Fermentation Broth &amp; the Process Performance Guarantee</h3><p class="fusion-single-line-meta"><span class="vcard" style="display: none;"><span class="fn"><a href="https://modularprocess.com" title="Posts by rosario" rel="author">rosario</a></span></span><span class="updated" style="display:none;">2016-11-02T14:44:44+00:00</span><span>October 10th, 2016</span><span class="fusion-inline-sep">|</span></p><div class="fusion-content-sep"></div><div class="fusion-meta-info">').insertAfter(jQuery("#post-5756 .fusion-post-content-container p:first-child"));
+
+
+            jQuery('<h3 data-fontsize="16" data-lineheight="24" style="margin-bottom:30px;font-weight:bold;font-size:16px;" data-inline-fontsize="true" data-inline-lineheight="true">Vol. 1, No. 1</h3><p class="fusion-single-line-meta"><span class="vcard" style="display: none;"><span class="fn"><a href="https://modularprocess.com" title="Posts by rosario" rel="author">rosario</a></span></span><span class="updated" style="display:none;">2016-11-02T14:44:44+00:00</span><span>October 10th, 2016</span><span class="fusion-inline-sep">|</span></p><div class="fusion-content-sep"></div><div class="fusion-meta-info"><div class="fusion-alignleft"><a class="fusion-read-more" href="https://modularprocess.com/2016/10/k-quips-october/">Read More</a></div></div>').insertAfter(jQuery("#post-5752 .fusion-post-wrapper h1"));
+
+
+            jQuery('<p class="fusion-single-line-meta"><span class="vcard" style="display: none;"><span class="fn"><a href="https://modularprocess.com" title="Posts by rosario" rel="author">rosario</a></span></span><span class="updated" style="display:none;">2016-11-02T14:44:44+00:00</span><span>October 10th, 2016</span><span class="fusion-inline-sep">|</span></p><div class="fusion-content-sep"></div><div class="fusion-meta-info"><div class="fusion-alignleft"><a class="fusion-read-more" href="https://modularprocess.com/2016/10/unit-ops-vol-1-no-1/">Read More</a></div></div>').insertAfter(jQuery("#post-5754 .fusion-post-content-container"));
+        }
+
+
+        
+    );
+</script>
+<?php } ?>
