@@ -1,0 +1,110 @@
+﻿HTML
+
+
+<div class="row">
+    <div class="col-md-6 col-sm-12 products">
+        <h1><a href="http://blueribbonnutrition.com/product-category/store/">PRODUCTS</a></h1>
+        <div class="col-sm-12">
+            <div class="product">
+                <div class="image"><a href="http://blueribbonnutrition.com/product/supplement-bottle/"><img src="http://blueribbonnutrition.com/wp-content/uploads/2016/05/SupplementBottle54-55_01.jpg"/></a></div>
+                <p class="title"><span>Pre-Workout Supplement</span></p>
+                <p class="price"><span>$45.00</span></p>
+                <div class="button"><a href="http://blueribbonnutrition.com/product/supplement-bottle/">BUY NOW</a></div>
+            </div>   
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 merchandise">
+        <h1><a href="http://blueribbonnutrition.com/product-category/store/">MERCHANDISE</a></h1>
+        <div class="col-sm-12">
+            <div class="product">
+                <div class="image"><a href="http://blueribbonnutrition.com/product/supplement-bottle/"><img src="http://blueribbonnutrition.com/wp-content/uploads/2016/08/product_men_tshirt.png"/></a></div>
+                <p class="title"><span>BR Men's T-shirt</span></p>
+                <p class="price"><span>$45.00</span></p>
+                <div class="button"><a href="http://blueribbonnutrition.com/product/brshirt/">BUY NOW</a></div>
+            </div>
+            <div class="product">
+                <div class="image"><a href="http://blueribbonnutrition.com/product/supplement-bottle/"><img src="http://blueribbonnutrition.com/wp-content/uploads/2016/08/product_black_shaker.png"/></a></div>
+                <p class="title"><span>BR Shaker Black</span></p>
+                <p class="price"><span>$45.00</span></p>
+                <div class="button"><a href="http://blueribbonnutrition.com/product/supplement-bottle/">BUY NOW</a></div>
+            </div>   
+            <div class="product">
+                <div class="image"><a href="http://blueribbonnutrition.com/product/supplement-bottle/"><img src="http://blueribbonnutrition.com/wp-content/uploads/2016/08/product_women_tanktop.png"/></a></div>
+                <p class="title"><span>BR Women's Tank</span></p>
+                <p class="price"><span>$45.00</span></p>
+                <div class="button"><a href="http://blueribbonnutrition.com/product/supplement-bottle/">BUY NOW</a></div>
+            </div>      
+        </div>
+        <h4><a href="http://blueribbonnutrition.com/product-category/store/">SHOP ALL PRODUCTS</a></h4>
+    </div>
+</div>
+
+
+CSS
+
+
+/*****New Product/Merchandise Section CSS*****/
+.col-md-6.col-sm-12.products img {
+    max-width: 500px;
+}
+
+
+.col-md-6.col-sm-12.merchandise img {
+    height: 180px;
+    float: left;
+}
+
+
+.col-md-6.col-sm-12.merchandise .product {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height:225px;
+}
+
+
+.col-md-6.col-sm-12.merchandise .title, .col-md-6.col-sm-12.merchandise .price {
+    text-align: left;
+    margin-left: 180px;
+}
+
+
+.col-md-6.col-sm-12.merchandise h4 a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px){
+    .products_section .image, .products_section .image img {
+        max-width: 450px!important;
+        margin: 0 auto;
+    }
+}
+
+
+@media(max-width:550px){
+    .merchandise .button {
+        display: inline-block;
+        width: 125px;
+    }
+
+
+    .col-md-6.col-sm-12.merchandise img {
+        height: 150px;
+    }
+
+
+    .col-md-6.col-sm-12.merchandise .title, .col-md-6.col-sm-12.merchandise .price {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+
+@media(max-width:450px){
+    .col-md-6.col-sm-12.products img {
+        max-width: 320px!important;
+    }
+}
